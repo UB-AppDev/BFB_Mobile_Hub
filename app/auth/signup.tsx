@@ -13,7 +13,7 @@ export default function SignUp() {
     const handleSignup = async () => {
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            router.replace('/explore');
+            router.replace('/home');
         } catch (error: any) {
             Alert.alert('Sign Up Failed', error.message);
         }
